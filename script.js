@@ -30,7 +30,6 @@ function setBorder(event) {
   } else {
     memeContainer.classList.add('earth');
   }
-
 }
 
 const fire = document.getElementById('fire');

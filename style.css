@@ -8,7 +8,7 @@
 #meme-image-container {
   position: relative;
   background-color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 300px;
   width: 300px;
 }
@@ -27,3 +27,72 @@
   color: white;
   text-shadow: 5px 5px 5px black;
 }
+
+#buttons {
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 650px;
+  padding: 10px;
+}
+
+#fire {
+  background-color: rgb(255, 0, 0);
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 2px 2px 1px #ccc;
+  border: 8px dashed #fff;
+  text-shadow: 1px 1px 1px black;
+  width: 190px;
+}
+
+#water {
+  background-color: rgb(0, 0, 255);;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 2px 2px 1px #ccc;
+  border: 8px double #fff;
+  text-shadow: 1px 1px 1px black;
+  width: 190px;
+}
+
+#earth {
+  background-color: rgb(0, 128, 0);
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 2px 2px 1px #ccc;
+  border: 8px groove #fff;
+  text-shadow: 1px 1px 1px black;
+  width: 190px;
+}
+
+#fire:hover , #water:hover , #earth:hover {
+  box-shadow: 8px 8px 5px #ddd;
+  cursor: pointer;
+}
+
+.deafultBorder {
+  border: 1px solid black;
+}
+
+.fire {
+  border: 3px dashed rgb(255, 0, 0);
+}
+
+.water {
+  border: 5px double rgb(0, 0, 255);
+}
+
+.earth {
+  border: 6px groove rgb(0, 128, 0);
+} 

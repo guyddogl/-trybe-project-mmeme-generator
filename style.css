@@ -4,3 +4,23 @@
   padding: 0;
   border: 0;
 }
+
+#meme-image-container {
+  position: relative;
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+}
+#meme-image { 
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  font-size: 30px;
+  color: white;
+}

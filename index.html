@@ -12,7 +12,9 @@
   <main>
     <section>
       <input type="text" id="text-input">
+      <input type="file" id="meme-insert" accept="image/*" onchange="showMemeImage(event);">
       <div id="meme-image-container">
+        <img src="" alt="Imagem do Meme" id="meme-image">
         <p id="meme-text"></p>
       </div>
     </section>

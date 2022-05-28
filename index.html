@@ -4,26 +4,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Meme Generator</title>
 </head>
 <body>
-  <header>Meme Generator</header>
-  <main>
-    <section>
-      <input type="text" id="text-input" maxlength="60">
-      <input type="file" id="meme-insert" accept="image/*">
-      <div id="meme-image-container" class="deafultBorder">
-        <img src="" alt="Imagem do Meme" id="meme-image">
-        <p id="meme-text"></p>
+  <header class="container-fluid text-center p-3">
+      <div class="row justify-content-center align-items-center g-0">
+        <div class="col-3 col-lg-1">
+          <img src="imgs/meme.webp" alt="" class="img-fluid mx-auto">
+        </div>
+        <div class="col-4 col-lg-2 text-center">
+          <h1 class="title">Meme Generator</h1>
+        </div>
       </div>
-      <div id="buttons">
-        <button id="fire">Fire &#128293;</button>
-        <button id="water">Water &#127754;</button>
-        <button id="earth">Earth &#127758;</button>
+  </header>
+  <main>
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-11 col-lg-6">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="text-input" placeholder="Digite o texto aqui" maxlength="60">
+            <label>&nbsp Digite o texto aqui</label>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-lg-6">
+          <div class="mb-3">
+            <input class="form-control" type="file" id="meme-insert" accept="image/*">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-9 col-lg-3">
+          <div id="meme-image-container" class="deafultBorder">
+            <img src="" alt="Imagem do Meme" id="meme-image" class="img-fluid">
+            <p id="meme-text"></p>
+          </div>
+        </div>
+        <div class="col-3 col-lg-3">
+          <button id="fire" class="mb-2">&#128293;</button>
+          <button id="water" class="mb-2">&#127754;</button>
+          <button id="earth" class="mb-2">&#127758;</button>
+          <br>
+          <div>
+            <img src="imgs/meme1.png" id="meme-1" alt="meme1" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+            <img src="imgs/meme2.png" id="meme-2" alt="meme2" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+            <img src="imgs/meme3.png" id="meme-3" alt="meme3" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+            <img src="imgs/meme4.png" id="meme-4" alt="meme4" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+            <img src="imgs/meme5.png" id="meme-5" alt="meme5" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+            <img src="imgs/meme6.png" id="meme-6" alt="meme6" class="mt-1 mb-1 meme-img" width="100px" height="100px">
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -50,11 +50,11 @@ function showSuggestImage(event) {
 }
 const suggestImg = document.getElementsByClassName('meme-img');
 
-function imgMeme(suggestImg) {
-  console.log(suggestImg);
-  for (let index = 0; index < suggestImg.length; index += 1) {
-    suggestImg[index].addEventListener('click', showSuggestImage);
-    suggestImg[index].style.cursor = 'pointer';
+function imgMeme(image) {
+  const imgElement = image;
+  for (let index = 0; index < imgElement.length; index += 1) {
+    imgElement[index].addEventListener('click', showSuggestImage);
+    imgElement[index].style.cursor = 'pointer';
   }
 }
 imgMeme(suggestImg);

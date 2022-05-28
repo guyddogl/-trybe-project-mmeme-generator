@@ -39,3 +39,22 @@ const earth = document.getElementById('earth');
 fire.addEventListener('click', setBorder);
 water.addEventListener('click', setBorder);
 earth.addEventListener('click', setBorder);
+
+// Requisito 7
+function showSuggestImage(event) {
+  let src = event.target.id;
+  src = src.split('-');
+  src = src.join('');
+  memeImg.src = `imgs/${src}.png`;
+  console.log(memeImg);
+}
+const suggestImg = document.getElementsByClassName('meme-img');
+
+function imgMeme(suggestImg) {
+  console.log(suggestImg);
+  for (let index = 0; index < suggestImg.length; index += 1) {
+    suggestImg[index].addEventListener('click', showSuggestImage);
+    suggestImg[index].style.cursor = 'pointer';
+  }
+}
+imgMeme(suggestImg);

@@ -5,6 +5,19 @@
   border: 0;
 }
 
+body {
+  background-color: rgb(88 , 241 , 255);
+}
+
+.title {
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  line-height: 1;
+}
+
 #meme-image-container {
   position: relative;
   background-color: white;
@@ -27,13 +40,17 @@
   text-shadow: 5px 5px 5px black;
 }
 
-#buttons {
+/* #buttons {
   margin: 10px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   max-width: 650px;
   padding: 10px;
+} */
+
+.meme-img {
+  border: 2px solid white;
 }
 
 #fire {
@@ -46,7 +63,6 @@
   box-shadow: 2px 2px 1px gray;
   border: 8px dashed white;
   text-shadow: 1px 1px 1px black;
-  width: 190px;
 }
 
 #water {
@@ -59,7 +75,6 @@
   box-shadow: 2px 2px 1px gray;
   border: 8px double white;
   text-shadow: 1px 1px 1px black;
-  width: 190px;
 }
 
 #earth {
@@ -72,7 +87,6 @@
   box-shadow: 2px 2px 1px gray;
   border: 8px groove white;
   text-shadow: 1px 1px 1px black;
-  width: 190px;
 }
 
 #fire:hover , #water:hover , #earth:hover {

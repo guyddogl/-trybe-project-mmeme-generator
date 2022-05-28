@@ -9,4 +9,4 @@ Links: <a href="https://guyddogl.github.io/trybe-project-meme-generator/">Previe
 ![JavaScript](https://img.shields.io/badge/-JavaScript-1b374b?style=for-the-badge&logo=javascript)&nbsp;
 <hr/>
 
-<img src="https://guyddogl.github.io/trybe-project-mystery-letter/imgs/memegenerator.gif" alt="Gif Preview" />
+<img src="https://guyddogl.github.io/trybe-project-meme-generator/imgs/memegenerator.gif" alt="Gif Preview" />
